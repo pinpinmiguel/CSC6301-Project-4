@@ -26,6 +26,7 @@ Quick Start
 1. Verify java is installed and meets the minimum version required. Java can be verified by typing into the temrinal:
 
 `java -version`
+
 `javac -version`
 
 2. Place the follwing .java files into the same folder:
