@@ -25,27 +25,29 @@ Quick Start
 -----------
 1. Verify java is installed and meets the minimum version required. Java can be verified by typing into the temrinal:
 
-java -version
-javac -version
+`java -version`
+`javac -version`
 
 2. Place the follwing .java files into the same folder:
 
+```
 AlertSystem.java
 NotificationMedium.java
 EmailService.java
 SMSService.java
+```
 
 3. Compile the .java files by navigating to the directory in your terminal and running:
 
-javac *.java
+`javac *.java`
 
 
 4. Run the AlertSystem class file using:
 
-java AlertSystem
+`java AlertSystem`
 
 Expected Output:
-
+```
 === Notification System Demo ===
 
 Switching to EMAIL service.
@@ -66,9 +68,10 @@ Switching to SMS service.
 5. [EMAIL] Amazon Order Confirmation
 6. [EMAIL] LinkedIn Job Alerts
 Total messages: 6
+```
 
 5. Generate HTML documentation using the javadocs tool:
 
-javadoc -d docs -author -version *.java
+`javadoc -d docs -author -version *.java`
 
 This command will generate the documentation for the program in a /docs folder in the directory of the files.
