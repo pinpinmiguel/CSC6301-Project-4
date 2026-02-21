@@ -5,8 +5,11 @@ A lightweight Java application demonstrating composition coding concepts through
 Capabilities
 ------------
 The application simulates a notification dispatch system with three core capabilities:
+
 Medium Swapping — The active notification platform (Email or SMS) can be switched at runtime via a single method call. No recompilation or structural changes are needed, because each service is swapped by reassigning a reference to the shared NotificationMedium interface.
+
 Message Dispatch — Once a medium is set, messages are sent through it and printed to the terminal with a labeled prefix (e.g., [EMAIL] or [SMS]). Attempting to send without a medium set throws an IllegalStateException with a descriptive error.
+
 Session Logging — Every sent message is recorded in an in-memory log tied to the AlertSystem instance. At any point, the log can be printed to the terminal in reverse chronological order (most recent first), along with a total message count.
 
 Requirements
