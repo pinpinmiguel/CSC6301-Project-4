@@ -42,12 +42,16 @@ SMSService.java
 
 ### 2. Compile the .java files by navigating to the directory in your terminal and running:
 
-```javac *.java```
+```
+javac *.java
+```
 
 
 ### 3. Run the AlertSystem class file using:
 
-```java AlertSystem```
+```
+java AlertSystem
+```
 
 Expected Output:
 ```
@@ -75,6 +79,8 @@ Total messages: 6
 
 ### 4. Generate HTML documentation using the javadocs tool:
 
-```javadoc -d docs -author -version *.java```
+```
+javadoc -d docs -author -version *.java
+```
 
 This command will generate the documentation for the program in a /docs folder in the directory of the files.
