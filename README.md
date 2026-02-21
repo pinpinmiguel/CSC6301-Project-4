@@ -16,10 +16,9 @@ Requirements
 ------------
 Software:
 Minimum Version of Java Development Kit (JDK) - 17.0.1
-Terminal / Command Prompt - Any Windows CMD, PowerShell, macOS Terminal, or Linux shell
 
 Hardware:
-No special hardware requirements
+Any modern computer capable to running the required JDK.
 
 Quick Start
 -----------
