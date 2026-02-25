@@ -1,15 +1,15 @@
 # CSC6301-Project-4
-Project for Week 4 of CSC6301
-A lightweight Java application demonstrating composition coding concepts through a pluggable notification system. The system allows runtime swapping between notification mediums (Email, SMS) without modifying core logic, and maintains a session log of all sent messages.
+A modular notification system built in Java demonstrating SOLID and composition design principles. The system simulates sending notifications through multiple platforms (Email, SMS) with runtime-swappable delivery methods and session logging.
 
-## Capabilities
-The application simulates a notification dispatch system with three core capabilities:
+## Overview
+This notification system allows users to:
 
-- Medium Swapping: The active notification platform (Email or SMS) can be switched at runtime via a single method call. No recompilation or structural changes are needed, because each service is swapped by reassigning a reference to the shared NotificationMedium interface.
+- Send notifications through multiple platforms (Email, SMS, WhatsApp)
+- Switch notification mediums at runtime without recompiling
+- Track all sent messages in a session log
+- Display message history in reverse chronological order
 
-- Message Dispatch: Once a medium is set, messages are sent through it and printed to the terminal with a labeled prefix (e.g., [EMAIL] or [SMS]). Attempting to send without a medium set throws an IllegalStateException with a descriptive error.
-
-- Session Logging: Every sent message is recorded in an in-memory log tied to the AlertSystem instance. At any point, the log can be printed to the terminal in reverse chronological order (most recent first), along with a total message count.
+The system simulates a long-term software maintenance project and thus prioritizes maintainability and extensibility. New notification services can be added without modifying the core `AlertSystem` class.
 
 ## Requirements
 
@@ -32,7 +32,9 @@ No dependencies on external libraries required as well.
 
 ## Quick Start
 
-### 1. Place the follwing .java files into the same folder:
+### 1. Clone or Download
+
+Download and extract the project to your local machine. Place the follwing .java files into the same folder:
 
 ```
 AlertSystem.java
@@ -41,20 +43,24 @@ EmailService.java
 SMSService.java
 ```
 
-### 2. Compile the .java files by navigating to the directory in your terminal and running:
+### 2. Navigate to Project Root and compile
+
+Compile the .java files by navigating to the directory in your terminal and running:
 
 ```
 javac *.java
 ```
 
+### 3. Run the AlertSystem class file
 
-### 3. Run the AlertSystem class file using:
+While in the same directory, run:
 
 ```
 java AlertSystem
 ```
 
-Expected Output:
+### Expected Output:
+
 ```
 === Notification System Demo ===
 
@@ -80,7 +86,9 @@ Total messages: 6
 
 If output is not as expected, build health is compromised.
 
-### 4. Generate HTML documentation using the javadocs tool:
+### Documentation
+
+Generate JavaDoc HTML documentation by navigating to project directory and running in the terminal:
 
 ```
 javadoc -d docs -author -version *.java
