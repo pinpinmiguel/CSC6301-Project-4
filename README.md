@@ -25,7 +25,7 @@ Verify installation by running in the terminal:
 java -version
 javac -version
 ```
-No dependencies required as well.
+No dependencies on external libraries required as well.
 
 ### Hardware
 - Any modern system capable of running Java
