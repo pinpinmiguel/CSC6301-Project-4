@@ -78,6 +78,8 @@ Switching to SMS service.
 Total messages: 6
 ```
 
+If output is not as expected, build health is compromised.
+
 ### 4. Generate HTML documentation using the javadocs tool:
 
 ```
